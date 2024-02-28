@@ -19,34 +19,14 @@
  */
 import React from "react";
 import ReactDOM from "react-dom";
-// import styled from "styled-components";
 import "antd/dist/antd.css";
 import "./styles.css";
-import { Radio, Input, Button, Select, DatePicker } from "antd";
-const Option = Select.Option;
+import SettingPanel from "./components/SettingPanel";
+
 
 function App() {
   return (
-    <div>
-      <Radio.Group value="text">
-        <Radio value="text">Text</Radio>
-        <Radio value="date">Date</Radio>
-      </Radio.Group>
-      <div>
-        <Input placeholder="Search name" />
-        <Button>Reset</Button>
-        <Button type="primary">Search</Button>
-      </div>
-      <div>
-        <Select showSearch defaultValue="before">
-          <Option value="before">before</Option>
-          <Option value="after">after</Option>
-        </Select>
-        <DatePicker />
-        <Button>Reset</Button>
-        <Button type="primary">Searchfor</Button>
-      </div>
-    </div>
+    <SettingPanel/>
   );
 }
 
